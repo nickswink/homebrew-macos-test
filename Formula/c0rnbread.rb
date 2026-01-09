@@ -9,8 +9,6 @@ class C0rnbread < Formula
         bin.install Dir["*"]
         Dir["#{bin}/*"].each do |f|
         system "codesign", "--force", "--sign", "-", f if File.file?(f)
-        end
-
         system "brew", "install", "docker"
         system "brew", "install", "docker-compose"
     end
