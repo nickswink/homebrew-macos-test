@@ -2,18 +2,15 @@ class C0rnbread < Formula
     desc "Test"
     homepage "https://github.com/nickswink/"
     url "https://github.com/nickswink/homebrew-macos-test/releases/download/release/c0rnbread-1.0.0.tar.gz"
-    sha256 "91a2a85ce5d0e7511daa4bfc22e87df2fe1bf67ff3d7fc9769d90b1193e95eea"
+    sha256 "40582368251403514766df8c50c2ef94c7e8920b5f606551a0bb5841ad2295fe"
     version "1.0.0"
-
-    depends_on "docker"
-    depends_on "docker-compose"
 
     def install
         bin.install Dir["*"]
         Dir["#{bin}/*"].each do |f|
         system "codesign", "--force", "--sign", "-", f if File.file?(f)
         end
-    end
+        end
 
     def post_install
         system "#{bin}/install.sh"
@@ -21,7 +18,7 @@ class C0rnbread < Formula
 
     def caveats
         <<~EOS
-        To finish installation, add the following line to .zshrc or .bashrc  
+        To finish installation, add the following line to .zshrc or .bashrc
   source #{bin}/completion.sh
 Then reopen your terminal app
         EOS
