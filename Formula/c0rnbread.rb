@@ -2,7 +2,7 @@ class C0rnbread < Formula
     desc "Test"
     homepage "https://github.com/nickswink/"
     url "https://github.com/nickswink/homebrew-macos-test/releases/download/release/c0rnbread-1.0.0.tar.gz"
-    sha256 "40582368251403514766df8c50c2ef94c7e8920b5f606551a0bb5841ad2295fe"
+    sha256 "1d44901a327773e0406423d858b7c13ac57680b8286bae25b8b206d6821c802e"
     version "1.0.0"
 
     def install
