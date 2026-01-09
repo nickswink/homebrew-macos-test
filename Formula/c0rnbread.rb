@@ -1,7 +1,7 @@
 class C0rnbread < Formula
     desc "Test"
     homepage "https://github.com/nickswink/"
-    url "https://github.com/nickswink/macos-test/releases/download/v1.0.0/c0rnbread-1.0.0.tar.gz"
+    url "https://github.com/nickswink/homebrew-macos-test/releases/download/release/c0rnbread-1.0.0.tar.gz"
     sha256 "82a786008b1aa76ce2c2874dd2b9c70f4167262748c65bc1dc36546afbb10e95"
     version "1.0.0"
 
